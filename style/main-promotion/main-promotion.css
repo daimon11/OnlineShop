@@ -51,12 +51,12 @@
 }
 
 
-@media (max-width: 1690px) {
+@media (max-width: 1530px) {
 
   .main-promotion__laptop {
     max-height: 280px;
     background-size: cover;
-    background-position: top 0 left -150px;
+    background-position: top 0 left -80px;
   }
 
   .main-promotion__timer-title {
@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 910px) {
   
   .main-promotion__laptop {
     max-height: 280px;
@@ -101,11 +101,12 @@
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 555px) {
   
   .main-promotion__laptop {
     max-height: 340px;
     background-position: top 0 right -100px;
+    border-radius: 8px;
   }
 
   .main-promotion__timer-title {
