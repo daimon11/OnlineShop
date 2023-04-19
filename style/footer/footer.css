@@ -32,7 +32,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
-  max-height: 308px;
+  max-height: 250px;
   word-break: break-all;
 }
 

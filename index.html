@@ -29,32 +29,38 @@
                     <span class="header__menu-text">Меню</span>
                 </button>
                 <form action="#" class="header__form">
-                    <input type="text" class="header__search-input" placeholder="Я ищу..." aria-label="поле для ввода поискового значения">
+                    <input type="text" class="header__search-input" placeholder="Я ищу..."
+                        aria-label="поле для ввода поискового значения">
                     <button class="header__search-btn">
                         <img src="./img/search.svg" alt="Изображение поиска" class="header__search-img">
                     </button>
                 </form>
-                <div class="header__btns-group">
-                    <div class="header__btn">
+                <ul class="header__btns-group">
+
+                    <li class="header__btn">
                         <button class="btn" aria-label="вход в личный кабинет">
                             <img src="./img/profil.svg" alt="Изображение профиля" class="btn-user-icon">
                         </button>
                         <span class="header__btns-text">Профиль</span>
-                    </div>
-                    <div class="header__btn">
+                    </li>
+
+                    <li class="header__btn">
                         <button class="btn btn--with_num" aria-label="корзина с товарами">
                             <img src="./img/basket.svg" alt="Изображение корзины" class="btn-user-icon">
                             <span class="number-goods">2</span>
                         </button>
                         <span class="header__btns-text">Корзина</span>
-                    </div>
-                    <div class="header__btn">
+                    </li>
+
+                    <li class="header__btn">
                         <button class="btn">
-                            <img src="./img/favorit.svg" alt="Изображение избранного" class="btn-user-icon" aria-label="Избранное">
+                            <img src="./img/favorit.svg" alt="Изображение избранного" class="btn-user-icon"
+                                aria-label="Избранное">
                         </button>
                         <span class="header__btns-text">Избранное</span>
-                    </div>
-                </div>
+                    </li>
+
+                </ul>
             </div>
 
         </div>
@@ -63,7 +69,7 @@
     <main class="content">
         <section class="main-promotion">
             <div class="container">
-                <a href="#" class="main-promoton__link">
+                <a href="#" class="main-promoton-link">
                     <div class="main-promotion__laptop">
 
                         <h1 class="title-size-1">-50% на все ноутбуки</h1>
@@ -77,37 +83,44 @@
         <section class="all-banners">
             <div class="container">
                 <div class="all-banners__wrapper">
-                    <a href="#" aria-label="Книга лучший подарок" class="all-banners__book banner-size-l">
-                        <h3 class="title-size-3 all-banners__book-title"><span class="size-bold">Книга</span> - <span
-                                class="size-block">лучший подарок</span></h3>
-                    </a>
-                    <a href="#" aria-label="Товары со скидкой 25%" class="all-banners__discount-time banner-size-l">
-                        <h3 class="title-size-3 all-banners__discount-time-title">Время скидок</h3>
-                    </a>
-                    <a href="#" aria-label="Вторая пара кроссовок в подарок!" class="all-banners__two-pairs">
-                        <h2 class="title-size-2 all-banners__two-pairs-title">Вторая пара кроссовок <span
-                                class="size-block"><span class="size-bold">в подарок!</span></span></h2>
-                    </a>
-                    <a href="#" aria-label="Идеи новогодних подарков" class="all-banners__gift-ideas banner-size-xl">
-                        <h3 class="all-banners__gift-ideas-title title-size-2">Идеи новогодних подарков</h3>
-                    </a>
-                    <a href="#" aria-label="Новогодние украшения" class="all-banners__red-cross banner-size-xl">
-                    </a>
-                    <a href="#" aria-label="Скидка в декабре -15%" class="all-banners__december banner-size-xl">
-                        <h3 class="all-banners__december-title title-size-2">Выгодно в декабре!</h3>
-                    </a>
-                    <a href="#" aria-label="Новогодние украшения" class="all-banners__christmas-decorations">
-                        <h2 class="all-banners__christmas-decorations-title title-size-2">Новогодние украшения</h2>
-                    </a>
-                    <a href="#" aria-label="Платья со скидкой 55%" class="all-banners__dresses">
-                    </a>
-                    <a href="#" aria-label="" class="all-banners__double-block">
-                        <div class="all-banners__household-chemicals banner-size-l">
+
+                        <a href="#" class="all-banners__book banner-size-l" aria-label="Книга лучший подарок">
+                            <h3 class="title-size-3 all-banners__book-title"><span class="size-bold">Книга</span> -
+                                <span class="size-block">лучший подарок</span>
+                            </h3>
+                        </a>
+                        <a href="#" class="all-banners__discount-time banner-size-l">
+                            <h3 class="title-size-3 all-banners__discount-time-title">Время скидок</h3>
+                        </a>
+                        <a href="#" aria-label="Вторая пара кроссовок в подарок!" class="all-banners__two-pairs">
+                            <h2 class="title-size-2 all-banners__two-pairs-title">Вторая пара кроссовок <span
+                                    class="size-block"><span class="size-bold">в подарок!</span></span></h2>
+                        </a>
+                        <a href="#" aria-label="Идеи новогодних подарков" class="all-banners__gift-ideas banner-size-xl">
+                            <h3 class="all-banners__gift-ideas-title title-size-2">Идеи новогодних подарков</h3>
+                        </a>
+                        <a href="#" aria-label="Красные кроссовки со скидкой 40%" class="all-banners__red-cross banner-size-xl">
+                        </a>
+                        <a href="#" aria-label="Скидка в декабре -15%" class="all-banners__december banner-size-xl">
+                            <h3 class="all-banners__december-title title-size-2">Выгодно в декабре!</h3>
+                        </a>
+
+                        <a href="#" aria-label="Новогодние украшения" class="all-banners__christmas-decorations">
+                            <h2 class="all-banners__christmas-decorations-title title-size-2">Новогодние украшения</h2>
+                        </a>
+
+                        <a href="#" aria-label="Платья со скидкой 55%" class="all-banners__dresses">
+                        </a>
+
+                    <div class="all-banners__double-block">
+                        <a href="#" aria-label="Скидка 25% на бытовую химию"
+                            class="all-banners__household-chemicals banner-size-l">
                             <h3 class="all-banners__household-chemicals-title title-size-3">На бытовую химию</h3>
+                        </a>
+                        <div class="all-banners__red-balls banner-size-l" aria-hidden="true">
                         </div>
-                        <div class="all-banners__red-balls banner-size-l">
-                        </div>
-                    </a>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -119,7 +132,7 @@
                 <ul class="profitable__product-list">
 
                     <li class="profitable__wrapper">
-                        <a href="#" class="profitable__item-link">
+                        <a href="#" class="profitable__item-link" aria-label="Пара белых футболок 1299 ₽">
                             <img src="./style/profitable/img/two-tshirts.jfif" alt="Пара белых футболок"
                                 class="profitable__item-img">
                             <div class="profitable__price">
@@ -131,70 +144,86 @@
                     </li>
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/sneakers.jfif" alt="Кроссовки Найк"
-                            class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">2099 ₽</span>
-                            <span class="old-price">5938 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Кроссовки</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Кроссовки 2099 ₽">
+                            <img src="./style/profitable/img/sneakers.jfif" alt="Кроссовки"
+                                class="profitable__item-img">
+                            <div class="profitable__price">
+                                <span class="new-price">2099 ₽</span>
+                                <span class="old-price">5938 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Кроссовки</h4>
+                        </a>
                     </li>
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/bed.jfif" alt="Кровать" class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">3902 ₽</span>
-                            <span class="old-price">4490 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Постельное белье</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Постельное белье 3902 ₽">
+                            <img src="./style/profitable/img/bed.jfif" alt="Кровать" class="profitable__item-img">
+                            <div class="profitable__price">
+                                <span class="new-price">3902 ₽</span>
+                                <span class="old-price">4490 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Постельное белье</h4>
+                        </a>
                     </li>
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/hair-dryer.jfif" alt="Фен" class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">2999 ₽</span>
-                            <span class="old-price">6030 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Фен</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Фен 2999 ₽">
+                            <img src="./style/profitable/img/hair-dryer.jfif" alt="Фен" class="profitable__item-img">
+                            <div class="profitable__price">
+                                <span class="new-price">2999 ₽</span>
+                                <span class="old-price">6030 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Фен</h4>
+                        </a>
                     </li>
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/bed.jfif" alt="Кровать" class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">3902 ₽</span>
-                            <span class="old-price">4490 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Постельное белье</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Постельное белье 3902 ₽">
+                            <img src="./style/profitable/img/bed.jfif" alt="Кровать"
+                                class="profitable__item-img profitable__item-img--position_botton">
+                            <div class="profitable__price">
+                                <span class="new-price">3902 ₽</span>
+                                <span class="old-price">4490 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Постельное белье</h4>
+                        </a>
                     </li>
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/hair-dryer.jfif" alt="Фен" class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">2999 ₽</span>
-                            <span class="old-price">6030 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Фен</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Фен 2999 ₽">
+                            <img src="./style/profitable/img/hair-dryer.jfif" alt="Фен"
+                                class="profitable__item-img  profitable__item-img--position_botton">
+                            <div class="profitable__price">
+                                <span class="new-price">2999 ₽</span>
+                                <span class="old-price">6030 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Фен</h4>
+                        </a>
                     </li>
 
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/mittens.jfif" alt="Варежки в форме милых медведей"
-                            class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">540 ₽</span>
-                            <span class="old-price">890 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Варежки-мишки</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Варежки-мишки 540 ₽">
+                            <img src="./style/profitable/img/mittens.jfif" alt="Варежки в форме милых медведей"
+                                class="profitable__item-img">
+                            <div class="profitable__price">
+                                <span class="new-price">540 ₽</span>
+                                <span class="old-price">890 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Варежки-мишки</h4>
+                        </a>
                     </li>
 
                     <li class="profitable__wrapper">
-                        <img src="./style/profitable/img/two-tshirts.jfif" alt="Пара белых футболок"
-                            class="profitable__item-img">
-                        <div class="profitable__price">
-                            <span class="new-price">1299 ₽</span>
-                            <span class="old-price">2589 ₽</span>
-                        </div>
-                        <h4 class="profitable__title-item">Пара футболок</h4>
+                        <a href="#" class="profitable__item-link" aria-label="Постельное белье 3902 ₽">
+                            <img src="./style/profitable/img/two-tshirts.jfif" alt="Пара белых футболок"
+                                class="profitable__item-img">
+                            <div class="profitable__price">
+                                <span class="new-price">1299 ₽</span>
+                                <span class="old-price">2589 ₽</span>
+                            </div>
+                            <h4 class="profitable__title-item">Пара футболок</h4>
+                        </a>
                     </li>
 
                 </ul>
@@ -214,7 +243,7 @@
                 <div class="footer__catalog">
                     <h5 class="footer__title">Каталог</h5>
                     <ul class="footer__list">
-                        <li class="footer__item" aria-label="смартфоны">
+                        <li class="footer__item">
                             <a href="#" class="footer__item-link">Смартфоны</a>
                         </li>
                         <li class="footer__item">
