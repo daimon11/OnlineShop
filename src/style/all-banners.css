@@ -83,7 +83,7 @@
 /* Книга - лучший подарок */
 
 .all-banners__book {
-  background-image: url(./img/banner002.jpg);
+  background-image: url(..);
   grid-area: book;
 }
 
@@ -97,7 +97,7 @@
 /* Время скидок */
 
 .all-banners__discount-time {
-  background-image: url(./img/banner003.jpg);
+  background-image: url(../img/banner003.jpg);
   background-position: left -45px top 0;
   grid-area: discount-time;
 }
@@ -112,7 +112,7 @@
 
 .all-banners__two-pairs {
   position: relative;
-  background-image: url(./img/banner005.jpg);
+  background-image: url(../img/banner005.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 top 0;
@@ -135,7 +135,7 @@
 /* Идеи новогодних подарков */
 
 .all-banners__gift-ideas {
-  background-image: url(./img/banner007.jpg);
+  background-image: url(../img/banner007.jpg);
   background-position: left 0 bottom -50px;
   grid-area: gift-ideas;
 }
@@ -149,7 +149,7 @@
 /* красные кросы */
 
 .all-banners__red-cross {
-  background-image: url(./img/banner004.jpg);
+  background-image: url(../img/banner004.jpg);
   background-position: left 0 bottom -50px;
   grid-area: red-cross;
 }
@@ -157,7 +157,7 @@
 /* выгодно в декабре */
 
 .all-banners__december {
-  background-image: url(./img/banner006.jpg);
+  background-image: url(../img/banner006.jpg);
   background-position: left 0 bottom -60px;
   grid-area: december;
 }
@@ -172,7 +172,7 @@
 
 .all-banners__christmas-decorations {
   position: relative;
-  background-image: url(./img/banner009.jpg);
+  background-image: url(../img/banner009.jpg);
   background-position: left 0 bottom -150px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,7 +196,7 @@
 
 .all-banners__dresses {
   position: relative;
-  background-image: url(./img/banner010.jpg);
+  background-image: url(../img/banner010.jpg);
   background-position: left -90px bottom 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,7 +216,7 @@
 /* На бытовую химию */
 
 .all-banners__household-chemicals {
-  background-image: url(./img/banner011.jpg);
+  background-image: url(../img/banner011.jpg);
   background-position: left -70px bottom 0px;
   width: 100%;
 }
@@ -229,7 +229,7 @@
 /* красные шарики */
 
 .all-banners__red-balls {
-  background-image: url(./img/banner012.jpg);
+  background-image: url(../img/banner012.jpg);
   background-position: left 0 bottom 0;
   background-size: 180%;
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -424,7 +424,7 @@
   /* красные кросы */
 
   .all-banners__red-cross {
-    background-image: url(./img/banner004.jpg);
+    background-image: url(../img/banner004.jpg);
     background-position: left 0 top -45px;
     grid-area: red-cross;
   }

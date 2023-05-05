@@ -5,4 +5,3 @@ const deadline = timerElem.getAttribute('data-deadline');
 console.log('deadline', deadline);
 
 timer(timerElem, deadline);
-

@@ -3,7 +3,9 @@
 .main-promotion__laptop {
   position: relative;
   height: 480px;
-  background-image: url(../main-promotion/img/banner001.jpg);
+  background-image: url(../img/banner001-768.jpg);
+  background-position: top -600px left -300px;
+  /* background-size: cover; */
   border-radius: 20px;
   color: white;
   z-index: -1;
@@ -14,7 +16,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   border-radius: 20px;
   height: 100%;
   width: 100%;
@@ -56,7 +58,7 @@
   .main-promotion__laptop {
     max-height: 280px;
     background-size: cover;
-    background-position: top 0 left -80px;
+    background-position: top -200px left 0;
   }
 
   .main-promotion__timer-title {
@@ -80,7 +82,7 @@
   
   .main-promotion__laptop {
     max-height: 280px;
-    background-image: url(../main-promotion/img/banner001-768.jpg);
+    /* background-image: url(../img/banner001-768.jpg); */
     background-position: top -100px right 0;
   }
 

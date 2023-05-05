@@ -1,0 +1,18 @@
+{
+  "name": "m6u2t2-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cssimport": "^7.0.0"
+  }
+}
