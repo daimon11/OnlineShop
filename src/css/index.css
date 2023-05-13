@@ -1,0 +1,13 @@
+.header {
+  padding-top: 27px;
+  margin-bottom: 60px;
+}
+.header__container__header-wrapper {
+  display: grid;
+  grid-template-columns: minmax(165px, 190px) minmax(115px, 174px) minmax(540px, 757px) minmax(211px, 354px);
+  gap: 100px;
+  grid-template-areas: "logo menu-btn search btns-group";
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */

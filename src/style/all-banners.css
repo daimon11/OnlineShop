@@ -83,7 +83,7 @@
 /* Книга - лучший подарок */
 
 .all-banners__book {
-  background-image: url(..);
+  background-image: url(../img/banner002.jpg);
   grid-area: book;
 }
 
