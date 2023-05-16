@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
 
     <link rel="stylesheet" href="./style/index_block.css">
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./style/fonts.css">
 
     <script type="module" src="./script/index_block.js"></script>
@@ -22,7 +22,7 @@
 
     <header class="header">
         <div class="container">
-            <div class="header-wrapper">
+            <div class="header__wrapper">
                 <div class="header__logo">
                     <img src="./img/header_logo.svg" alt="Изображение логотипа" class="header__logo-img">
                 </div>
@@ -41,14 +41,14 @@
 
                     <li class="header__btn">
                         <button class="btn" aria-label="вход в личный кабинет">
-                            <img src="./img/header_profil.svg" alt="Изображение профиля" class="btn-user-icon">
+                            <img src="./img/header_profil.svg" alt="Изображение профиля" class="header__btn-icon">
                         </button>
                         <span class="header__btns-text">Профиль</span>
                     </li>
 
                     <li class="header__btn">
                         <button class="btn btn--with_num" aria-label="корзина с товарами">
-                            <img src="./img/header_basket.svg" alt="Изображение корзины" class="btn-user-icon">
+                            <img src="./img/header_basket.svg" alt="Изображение корзины" class="header__btn-icon">
                             <span class="number-goods">2</span>
                         </button>
                         <span class="header__btns-text">Корзина</span>
@@ -56,7 +56,7 @@
 
                     <li class="header__btn">
                         <button class="btn">
-                            <img src="./img/header_favorit.svg" alt="Изображение избранного" class="btn-user-icon"
+                            <img src="./img/header_favorit.svg" alt="Изображение избранного" class="header__btn-icon"
                                 aria-label="Избранное">
                         </button>
                         <span class="header__btns-text">Избранное</span>
@@ -93,40 +93,42 @@
             </div>
         </section>
 
+        <div class="pagination visually-hidden">
+            <button class="pagination__btn pagination__btn-prev">
+                <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="item-icon item-icon-disabled"
+                        d="M28.375 7.95833H6.52958L12.0487 2.42375L9.875 0.25L0.625 9.5L9.875 18.75L12.0487 16.5762L6.52958 11.0417H28.375V7.95833Z"
+                        fill="#3670C7" />
+                </svg>
+    
+            </button>
+            <div class="pagination__page-list">
+                <a class="item item-active" href="blog.html">1</a>
+                <a class="item" href="?page=2">2</a>
+                <a class="item" href="?page=3">3</a>
+            </div>
+            <button class="pagination__btn pagination__btn-next">
+                <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="item-icon"
+                        d="M0.625 7.95833H22.4704L16.9513 2.42375L19.125 0.25L28.375 9.5L19.125 18.75L16.9513 16.5763L22.4704 11.0417H0.625V7.95833Z"
+                        fill="#3670C7" />
+                </svg>
+    
+            </button>
+        </div>
+
     </main>
 
 
 
-    <div class="pagination visually-hidden">
-        <button class="footer__btn pagination__btn-prev">
-            <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="item-icon item-icon-disabled"
-                    d="M28.375 7.95833H6.52958L12.0487 2.42375L9.875 0.25L0.625 9.5L9.875 18.75L12.0487 16.5762L6.52958 11.0417H28.375V7.95833Z"
-                    fill="#3670C7" />
-            </svg>
 
-        </button>
-        <div class="footer__page-list">
-            <a class="item item-active" href="blog.html">1</a>
-            <a class="item" href="?page=2">2</a>
-            <a class="item" href="?page=3">3</a>
-        </div>
-        <button class="footer__btn pagination__btn-next">
-            <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="item-icon"
-                    d="M0.625 7.95833H22.4704L16.9513 2.42375L19.125 0.25L28.375 9.5L19.125 18.75L16.9513 16.5763L22.4704 11.0417H0.625V7.95833Z"
-                    fill="#3670C7" />
-            </svg>
-
-        </button>
-    </div>
 
     <footer class="footer">
         <div class="container">
 
             <div class="footer__wrapper">
                 <div class="footer__logo">
-                    <img src="./img/header_logo.svg" alt="Изображение логотипа" class="footer__logo-img">
+                    <img src="./img/footer_logo.svg" alt="Изображение логотипа" class="footer__logo-img">
                 </div>
 
                 <div class="footer__catalog">

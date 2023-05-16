@@ -99,7 +99,7 @@
   margin-bottom: 150px;
 }
 
-.footer__btn {
+.pagination__btn {
   margin: 9px 5px;
   width: 28px;
   height: 18.5px;
@@ -108,7 +108,7 @@
   border-radius: 4px;
 }
 
-.footer__page-list {
+.pagination__page-list {
   display: flex;
   flex-direction: row;
   gap: 6px;

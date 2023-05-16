@@ -1,14 +1,217 @@
 .header {
   padding-top: 27px;
   margin-bottom: 60px;
-  &__container {
-    &__header-wrapper{
-      display: grid;
-      grid-template-columns: minmax(165px, 190px) minmax(115px, 174px) minmax(540px, 757px) minmax(211px, 354px);
-      gap: 100px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(165px, 190px) minmax(115px, 174px) minmax(540px, 757px) minmax(211px, 354px);
+    gap: 100px;
+    grid-template-areas:
+      "logo menu-btn search btns-group";
+    align-items: center;
+
+    @media(max-width: 1430px) {
+      grid-template-columns: minmax(165px, 190px) minmax(540px, 700px);
       grid-template-areas:
-        "logo menu-btn search btns-group";
-      align-items: center;
+        "logo btns-group"
+        "menu-btn search";
+      gap: 34px 90px;
     }
+
+    @media(max-width: 910px) {
+      grid-template-columns: minmax(114px, 165px) minmax(130px, 100%);
+      align-items: center;
+      gap: 30px 0;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+
+    @media(max-width: 910px) {
+      max-width: 165px;
+    }
+  }
+
+  &__menu-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    @media (max-width: 910px) {
+      font-size: 16px;
+    }
+  }
+
+  &__menu-img {
+    width: 18px;
+    height: 12px;
+    @media (max-width: 910px) {
+      width: 18px;
+      height: 12px;
+    }
+  }
+
+  &__btn-menu {
+    grid-area: menu-btn;
+    place-self: end;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #3670C7;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    padding: 8px 28px 13px 28px;
+
+    @media(max-width: 1430px) {
+      place-self: start;
+    }
+
+    @media(max-width: 910px) {
+      gap: 7px;
+    }
+  }
+
+  &__btns-group {
+    max-width: 354px;
+    display: flex;
+    justify-content: space-between;
+    grid-area: btns-group;
+    gap: 3px;
+
+    @media (max-width: 1430px) {
+      gap: 40px;
+      place-self: end;
+    }
+
+    @media (max-width: 910px) {
+      gap: 30px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 910px) {
+      justify-content: flex-end;
+      gap: 5px;
+    }
+  }
+
+  &__btns-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+
+    @media (max-width: 910px) {
+      font-size: 12px;
+    }
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+
+  &__btn-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__form {
+    position: relative;
+    width: 100%;
+    grid-area: search;
+
+    @media (max-width: 1430px) {
+      place-self: end;
+    }
+  }
+
+  &__search-input {
+    width: 100%;
+    background: #eee;
+    border-radius: 30px;
+    padding: 18px 40px;
+    @media (max-width: 910px) {
+      padding: 11px 30px 15px;
+    }
+
+    &::placeholder {
+      font-weight: 700;
+      color: #8F8F8F;
+      @media (max-width: 910px) {
+        font-size: 12px;
+        line-height: 15.6px;
+      }
+    }
+  }
+
+  &__search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #3670C7;
+    color: white;
+    padding: 12px 37px;
+    border-radius: 30px;
+    
+    @media (max-width: 910px) {
+      padding: 10px 30px;
+    }
+  }
+
+  &__search-img {
+    width: 26px;
+    height: 26px;
+
+    @media (max-width: 910px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+}
+
+.btn--with_num {
+  position: relative;
+
+  &::before {
+    position: relative;
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -11px;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background: white;
+  }
+}
+
+.number-goods {
+  position: absolute;
+  top: -5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3670C7;
+}
+
+.btn-user-icon {
+  @media (max-width: 1430px) {
+    max-height: 30px;
+  }
+}
+
+.btn {
+  @media (max-width: 910px) {
+    width: 25px;
+    height: 25px;
   }
 }
