@@ -1,25 +1,39 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
+import sassPkg from 'sass';
+import gulpSass from 'gulp-sass';
 import cssImport from 'gulp-cssimport';
-import {deleteAsync} from 'del';
-
-
+import { deleteAsync } from 'del';
 // задачи
+
+const prepros = true;
+
+const sass = gulpSass(sassPkg);
 
 export const html = () => gulp
   .src('src/*.html')
   .pipe(gulp.dest('dist'))
   .pipe(browserSync.stream());
 
-export const css = () => gulp
-  .src('src/style/index.css')
-  .pipe(cssImport({
-    extensions: ['css'],
-  }))
+// export const css = () => 
 
-  .pipe(gulp.dest('dist/style'))
-  .pipe(browserSync.stream());
-  
+
+export const style = () => {
+  if (prepros) {
+    return gulp
+      .src('src/scss/**/*.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('dist/css'))
+      .pipe(browserSync.stream());
+  }
+  return gulp
+    .src('src/style/index.css')
+    .pipe(cssImport({
+      extensions: ['css'],
+    }))
+    .pipe(gulp.dest('dist/style'))
+    .pipe(browserSync.stream());
+}
 
 export const js = () => gulp
   .src('src/script/**/*.js')
@@ -49,15 +63,16 @@ export const server = () => {
   })
 
   gulp.watch('./src/**/*.html', html);
-  gulp.watch('./src/**/*.html', css);
+  // gulp.watch('./src/**/*.html', css);
+  gulp.watch(prepros ? './src/scss/**/*.scss' : './src/css/**/*.css', style);
   gulp.watch('./src/**/*.html', js);
   gulp.watch(['./src/style/**/img/*', './src/fonts/**/*'], copy);
 }
 
-export const clear = () => deleteAsync('dist/**/*', {forse: true,});
+export const clear = () => deleteAsync('dist/**/*', { forse: true, });
 
 // запуск
-export const base = gulp.parallel(html, css, js, copy);
+export const base = gulp.parallel(html, style, js, copy);
 
 export const build = gulp.series(clear, base);
 

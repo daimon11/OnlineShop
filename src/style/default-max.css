@@ -25,6 +25,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align:bottom
 }
 
 
@@ -102,14 +103,6 @@ textarea {
   overflow: hidden;
 }
 
-/*
-Пример контейнера
-Если контейнер 1180px по макету,
-то для max-width прибавляем паддинги 30px*2, 
-в итоге 1240px
-Чтобы контент не прижимался к краям экрана
-*/
-
 .container {
   max-width: 1854px;
   padding: 0 42px;
@@ -166,6 +159,7 @@ section {
 
   .title-size-2 {
     font-size: 30px;
+    font-weight: 400;
   }
 
   .title-size-3 {
@@ -173,7 +167,7 @@ section {
   }
 
   .size-bold {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -187,10 +181,13 @@ section {
     font-size: 30px;
     padding-top: 64px;
     margin-left: 80px;
+    margin-bottom: 82px;
   }
 
   .title-size-2 {
-    font-size: 26px;
+    font-size: 16px;
+    line-height: 17.6px;
+    font-weight: 700;
   }
 
   .title-size-3 {
@@ -211,7 +208,7 @@ section {
   }
 }
 
-@media (max-width: 555px) {
+@media (max-width: 500px) {
   .container {
     max-width: 320px;
     padding: 0 20px;
@@ -225,11 +222,13 @@ section {
   }
 
   .title-size-2 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .title-size-3 {
     font-size: 12px;
+    left: 10px;
+    bottom: 10px;
   }
 
   .size-bold {

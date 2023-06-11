@@ -1,0 +1,109 @@
+$color-text-dark: #2D2D2D;
+$color-text-white: #ffffff;
+
+%titleSizeOne {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 130%;
+  padding-top: 145px;
+  margin-left: 112px;
+  margin-bottom: 100px;
+
+  @media (max-width: 1430px) {
+    font-size: 40px;
+    padding-top: 80px;
+    margin-left: 80px;
+    margin-bottom: 11px;
+    max-width: 400px;
+  }
+
+  @media (max-width: 910px) {
+    font-size: 30px;
+    padding-top: 64px;
+    margin-left: 80px;
+    margin-bottom: 82px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 22px;
+    padding-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 189px;
+  }
+}
+
+%titleSizeTwo {
+  position: absolute;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: $color-text-white;
+
+  @media (max-width: 1430px) {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  @media (max-width: 910px) {
+    font-size: 16px;
+    line-height: 17.6px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+%titleSizeThree {
+  position: absolute;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 130%;
+  color: $color-text-white;
+
+  @media (max-width: 1430px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 910px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+%sizeBoldText {
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (max-width: 1430px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 910px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+    font-weight: 700;
+  } 
+}
+
+%accAnimation {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: height;
+}

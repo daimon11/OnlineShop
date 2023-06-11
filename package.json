@@ -1,5 +1,5 @@
 {
-  "name": "m6u2t2-main",
+  "name": "scss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,8 @@
     "browser-sync": "^2.29.1",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
-    "gulp-cssimport": "^7.0.0"
+    "gulp-cssimport": "^7.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
   }
 }
