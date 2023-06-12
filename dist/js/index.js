@@ -1,0 +1,2 @@
+import{timer}from"./modules/timer.js";import{acc}from"./modules/acc.js";const timerElem=document.querySelector(".main-promotion__timer"),deadline=timerElem.getAttribute("data-deadline");console.log("deadline",deadline),timer(timerElem,deadline);const accRun=acc(document.querySelectorAll(".footer__title--type_close"),document.querySelectorAll(".footer__list--type_hidden"));
+//# sourceMappingURL=../maps/index.js.map

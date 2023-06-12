@@ -1,6 +1,8 @@
 import { paginationControl } from './modules/pagination.js';
 import { renderGoods } from './modules/renderArticleList.js';
-import { renderArticle } from './modules/renderArticlePage.js'
+import { renderArticle } from './modules/renderArticlePage.js';
+import {acc} from './modules/acc.js';
+
 
 const renderArticles = (page) => {
 
@@ -36,6 +38,8 @@ if (searchParams.has("id")) {
   renderArticles(currentActive);
 };
 
+const accRun = acc(document.querySelectorAll('.footer__title--type_close'),
+document.querySelectorAll('.footer__list--type_hidden'));
 
 
 

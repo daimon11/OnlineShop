@@ -33,7 +33,7 @@ export const renderGoods = async (currentPage) => {
       topic.innerHTML = `
     ${(item.image) ?
           `<img src="${image}" alt="Изображение ${item.time}" class="topic__img">` :
-          `<img src="./img/no-img.png">`
+          `<img class="topic__img" src="./img/no-img.png">`
         }
       <div class="topic__wrapper">
         <div class="topic__title-wrapper">

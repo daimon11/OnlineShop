@@ -9,11 +9,9 @@
     <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="./style/index_block.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./style/fonts.css">
 
-    <script type="module" src="./script/index_block.js"></script>
+    <script type="module" src="./js/index_block.js"></script>
 
     <title>ShopOnline</title>
 </head>
@@ -86,10 +84,11 @@
 
         <section class="articles">
 
-            <h1 class="visually-hidden">Блог</h1>
+            <div class="container">
+                <h1 class="visually-hidden">Блог</h1>
 
-            <div class="articles__list">
-
+                <div class="articles__list">
+                </div>
             </div>
         </section>
 
@@ -100,7 +99,7 @@
                         d="M28.375 7.95833H6.52958L12.0487 2.42375L9.875 0.25L0.625 9.5L9.875 18.75L12.0487 16.5762L6.52958 11.0417H28.375V7.95833Z"
                         fill="#3670C7" />
                 </svg>
-    
+
             </button>
             <div class="pagination__page-list">
                 <a class="item item-active" href="blog.html">1</a>
@@ -113,14 +112,11 @@
                         d="M0.625 7.95833H22.4704L16.9513 2.42375L19.125 0.25L28.375 9.5L19.125 18.75L16.9513 16.5763L22.4704 11.0417H0.625V7.95833Z"
                         fill="#3670C7" />
                 </svg>
-    
+
             </button>
         </div>
 
     </main>
-
-
-
 
 
     <footer class="footer">
@@ -132,8 +128,8 @@
                 </div>
 
                 <div class="footer__catalog">
-                    <h5 class="footer__title">Каталог</h5>
-                    <ul class="footer__list">
+                    <h5 class="footer__title footer__title--type_close">Каталог</h5>
+                    <ul class="footer__list footer__list--type_hidden">
                         <li class="footer__item">
                             <a href="#" class="footer__item-link">Смартфоны</a>
                         </li>
@@ -168,8 +164,8 @@
                 </div>
 
                 <div class="footer__buyers">
-                    <h5 class="footer__title">Покупателям</h5>
-                    <ul class="footer__list">
+                    <h5 class="footer__title footer__title--type_close">Покупателям</h5>
+                    <ul class="footer__list footer__list--type_hidden">
                         <li class="footer__item">
                             <a href="#" class="footer__item-link">Оплата заказа</a>
                         <li class="footer__item">
@@ -247,6 +243,7 @@
 
         </div>
     </footer>
+
 
 </body>
 

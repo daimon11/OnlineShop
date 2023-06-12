@@ -61,7 +61,7 @@ export const renderArticle = async (
     </a>
 
     <div class="article__autor-block">
-    <h4 class="article__autor-name">${autorId.name}</h4>
+    <h4 class="article__autor-name">${autorId.name ? autorId.name : ''}</h4>
 
     <span class="article__time">${date}</span>
 

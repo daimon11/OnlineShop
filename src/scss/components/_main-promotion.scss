@@ -28,10 +28,10 @@
 
     @media (max-width: 910px) {
       max-height: 280px;
-      background-position: top -100px right 0;
+      background-position: bottom -180px right 0;
     }
 
-    @media (max-width: 555px) {
+    @media (max-width: 500px) {
       max-height: 340px;
       background-position: top 0 right -100px;
       border-radius: 8px;
@@ -45,7 +45,7 @@
     @media (max-width: 910px) {
       font-size: 12px;
     }
-    @media (max-width: 555px) {
+    @media (max-width: 500px) {
       font-size: 8px;
     }
   }
@@ -72,7 +72,7 @@
   @media (max-width: 910px) {
     gap: 10px;
   }
-  @media (max-width: 555px) {
+  @media (max-width: 500px) {
     gap: 8px;
   }
 }
@@ -89,7 +89,7 @@
   @media (max-width: 910px) {
     font-size: 30px;
   }
-  @media (max-width: 555px) {
+  @media (max-width: 500px) {
     font-size: 20px;
   }
 }
@@ -107,7 +107,7 @@
     font-size: 16px;
   }
 
-  @media (max-width: 555px) {
+  @media (max-width: 500px) {
     font-size: 12px;
   }
 }
