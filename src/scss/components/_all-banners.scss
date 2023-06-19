@@ -205,7 +205,17 @@
   }
 
   &__book {
-    background-image: url(../img/banner002.jpg);
+    background-image: url('../img/banner002.jpg');
+    background-image: -webkit-image-set(
+      url('../img/banner002.avif') 1x,
+      url('../img/banner002.webp') 1x
+      // url('../img/banner002.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner002.avif') 1x,
+      url('../img/banner002.webp') 1x
+      // url('../img/banner002.jpg') 1x
+    );
     grid-area: book;
   }
 
@@ -226,6 +236,16 @@
 
   &__discount-time {
     background-image: url(../img/banner003.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner003.avif') 1x,
+      url('../img/banner003.webp') 1x
+      // url('../img/banner003.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner003.avif') 1x,
+      url('../img/banner003.webp') 1x
+      // url('../img/banner003.jpg') 1x
+    );
     background-position: left -45px top 0;
     grid-area: discount-time;
 
@@ -244,6 +264,16 @@
   &__two-pairs {
     position: relative;
     background-image: url(../img/banner005.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner005.avif') 1x,
+      url('../img/banner005.webp') 1x
+      // url('../img/banner005.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner005.avif') 1x,
+      url('../img/banner005.webp') 1x
+      // url('../img/banner005.jpg') 1x
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left 0 top 0;
@@ -299,6 +329,16 @@
 
   &__gift-ideas {
     background-image: url(../img/banner007.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner007.avif') 1x,
+      url('../img/banner007.webp') 1x
+      // url('../img/banner007.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner007.avif') 1x,
+      url('../img/banner007.webp') 1x
+      // url('../img/banner007.jpg') 1x
+    );
     background-position: left 0 bottom -50px;
     grid-area: gift-ideas;
 
@@ -320,6 +360,16 @@
 
   &__red-cross {
     background-image: url(../img/banner004.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner004.avif') 1x,
+      url('../img/banner004.webp') 1x
+      // url('../img/banner004.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner004.avif') 1x,
+      url('../img/banner004.webp') 1x
+      // url('../img/banner004.jpg') 1x
+    );
     background-position: left 0 bottom -50px;
     grid-area: red-cross;
 
@@ -330,6 +380,16 @@
 
   &__december {
     background-image: url(../img/banner006.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner006.avif') 1x,
+      url('../img/banner006.webp') 1x
+      // url('../img/banner006.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner006.avif') 1x,
+      url('../img/banner006.webp') 1x
+      // url('../img/banner006.jpg') 1x
+    );
     background-position: left 0 bottom -60px;
     grid-area: december;
 
@@ -356,6 +416,16 @@
   &__christmas-decorations {
     position: relative;
     background-image: url(../img/banner009.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner009.avif') 1x,
+      url('../img/banner009.webp') 1x
+      // url('../img/banner009.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner009.avif') 1x,
+      url('../img/banner009.webp') 1x
+      // url('../img/banner009.jpg') 1x
+    );
     background-position: left 0 bottom -150px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,6 +479,16 @@
   &__dresses {
     position: relative;
     background-image: url(../img/banner010.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner010.avif') 1x,
+      url('../img/banner010.webp') 1x
+      // url('../img/banner010.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner010.avif') 1x,
+      url('../img/banner010.webp') 1x
+      // url('../img/banner010.jpg') 1x
+    );
     background-position: left -90px bottom 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -441,6 +521,16 @@
 
   &__household-chemicals {
     background-image: url(../img/banner011.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner011.avif') 1x,
+      url('../img/banner011.webp') 1x
+      // url('../img/banner011.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner011.avif') 1x,
+      url('../img/banner011.webp') 1x
+      // url('../img/banner011.jpg') 1x
+    );
     background-position: left -70px bottom 0;
     width: 100%;
 
@@ -456,6 +546,16 @@
 
   &__red-balls {
     background-image: url(../img/banner012.jpg);
+    background-image: -webkit-image-set(
+      url('../img/banner012.avif') 1x,
+      url('../img/banner012.webp') 1x
+      // url('../img/banner012.jpg') 1x
+    );
+    background-image: image-set(
+      url('../img/banner012.avif') 1x,
+      url('../img/banner012.webp') 1x
+      // url('../img/banner012.jpg') 1x
+    );
     background-position: left 0 bottom 0;
     background-size: 180%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
