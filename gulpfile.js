@@ -17,7 +17,7 @@ import gulpif from 'gulp-if';
 
 const prepros = true;
 
-let dev = true;
+let dev = false;
 
 const sass = gulpSass(sassPkg);
 
@@ -30,14 +30,11 @@ export const html = () => gulp
   .pipe(gulp.dest('dist'))
   .pipe(browserSync.stream());
 
-// export const css = () => 
-
-
 export const style = () => {
   if (prepros) {
     return gulp
       .src('src/scss/**/*.scss')
-      .pipe(gulpif(!dev, sourceMaps.init()))
+      .pipe(gulpif(dev, sourceMaps.init()))
       .pipe(sass().on('error', sass.logError))
       .pipe(cleanCss({
         2: {

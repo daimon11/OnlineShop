@@ -68,19 +68,13 @@
   }
 
   &__btn-menu {
+    position: relative;
     grid-area: menu-btn;
     place-self: end;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    height: 100%;
     background: #3670C7;
     border-radius: 10px;
-    color: white;
-    font-size: 22px;
-    padding: 8px 28px 13px 28px;
+    padding: 0 28px 0 61px;
 
     @media(max-width: 1430px) {
       place-self: start;
@@ -97,10 +91,30 @@
     }
   }
 
+  &__btn-menu--type_close:after {
+    content: url('../img/header_menu-open.svg');
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 21px;
+    left: 33px;
+  }
+
+  &__btn-menu--type_open:after {
+    content: url('../img/header_menu-close.svg');
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 20px;
+    left: 35px;
+  }
+
   &__menu-text {
+    display: inline-block;
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
+    color: white;
 
     @media (max-width: 910px) {
       font-size: 16px;
@@ -236,6 +250,62 @@
       width: 14.5px;
       height: 14.5px;
     }
+  }
+
+  // надо посмотреть как делалось модальное окно ранее
+
+  &__menu-group {
+
+    position: fixed;
+    background-color: white;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__menu-group--type_close {
+    display: none;
+  }
+
+  &__menu-overlay {
+    width: 100%;
+    padding: 52px 0 92px 0;
+    background-color: white;
+    z-index: 10;
+  }
+
+  &__menu-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__menu-block--big_weight {
+    width: 533px;
+  }
+
+  &__menu-title {
+    margin-top: 0;
+    @extend %titleSizeFive;
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &--big_weight {
+      max-height: 245px;
+      flex-wrap: wrap;
+      gap: 20px 83px;
+    }
+  }
+
+  &__menu-item {
+    @extend %itemList;
   }
 
 }

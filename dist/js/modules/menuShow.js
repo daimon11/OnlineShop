@@ -1,0 +1,1 @@
+export const menuControl=(e,t)=>{e.addEventListener("click",(()=>{document.body.classList.toggle("disable-scroll"),e.classList.toggle("header__btn-menu--type_close"),e.classList.toggle("header__btn-menu--type_open"),t.classList.toggle("header__menu-group--type_close")}))};

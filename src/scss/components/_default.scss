@@ -16,8 +16,8 @@ body {
   /* указать шрифт под проект*/
   font-size: 16px;
   font-weight: 400;
-  color: $color-text-dark;
-  background-color: $color-text-white;
+  // color: $color-text-dark;
+  // background-color: $color-text-white;
   margin: 0;
 }
 
@@ -152,4 +152,14 @@ section {
   @media (max-width: 500px) {
     padding: 10px 0;
   }
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
